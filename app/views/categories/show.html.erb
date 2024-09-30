@@ -12,4 +12,10 @@
   <h3><%= "🇬🇧" %></h3>
 <% end %>
 
+<ul>
+  <% @category.recipes.each do |recipe| %>
+    <li><%= recipe.name %></li>
+  <% end %>
+</ul>
+
 <%= link_to "Delete this specific category", category_path(@category), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
