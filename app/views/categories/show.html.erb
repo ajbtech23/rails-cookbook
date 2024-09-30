@@ -11,3 +11,5 @@
 <% elsif (@category.name) == "British" %>
   <h3><%= "🇬🇧" %></h3>
 <% end %>
+
+<%= link_to "Delete this specific category", category_path(@category), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
