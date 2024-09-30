@@ -1,0 +1,13 @@
+<h1>Here you can find the details of a specific category</h1>
+
+<h2><%= @category.name %></h2>
+
+<% if (@category.name == "Nigerian") %>
+  <h3><%= "🇳🇬" %></h3>
+<% elsif (@category.name) == "Italian" %>
+  <h3><%= "🇮🇹" %></h3>
+<% elsif (@category.name) == "Jamaican" %>
+  <h3><%= "🇯🇲" %></h3>
+<% elsif (@category.name) == "British" %>
+  <h3><%= "🇬🇧" %></h3>
+<% end %>
